@@ -1,0 +1,120 @@
+@import url(./reset.css);
+
+*{
+    box-sizing: border-box;
+}
+body{
+    --card-width: 350px;
+    --main-color: rgba(137, 140, 140, 0.986);
+    background-color: #0e0e0e;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 2em;
+    font-family: 'Montserrat', sans-serif;
+    flex-wrap: wrap;
+
+}
+.mainContainer{
+    width: 1000px;
+    height: 1200px;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.userCard{
+    width: var(--card-width);
+    height: 600px;
+    background-color: rgb(233, 235, 238);
+    border-radius: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+
+}
+.headBG{
+    background-color: white;
+    width: 100%;
+    height: calc(var(--card-width)*0.7);
+}
+
+.headBG, .mainBG, .button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.mainBG{
+    width: 100%;
+    margin-bottom: auto;
+}
+    .userProfileImage{
+        width: calc(var(--card-width)*0.4);
+        height: calc(var(--card-width)*0.4);
+        border-radius: 50%;
+        /*object-fit: cover;*/
+        margin-top: calc(var(--card-width)*(0.1));
+        overflow: hidden; 
+        z-index: 1;     
+    }
+    img{
+        width: 100%;
+        height: 100%;
+    }
+        /*.far*/ .fa-star{
+            text-align: center;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-color: white;
+            color: var(--main-color);
+            margin-top: -18px;
+            z-index: 2;
+        }
+   .userPosition, .userAbout {
+       font-size: 20px;
+       font-weight: bold;
+       text-align: center;
+   }
+   .salaryPerHour {
+    font-size: 20px ;
+    font-weight: bold;
+    color: var(--main-color);
+   }
+
+   .userLocation, .userInfo{
+    margin:auto 0 auto 0;
+    font-size: 15px ;
+    color: var(--main-color);
+
+   }
+   .userInfo{
+       text-align: center;
+       width: 80%;
+       
+   }
+   button{
+       width: 220px;
+       height: 50px;
+       border:5px solid rgb(112, 167, 243);
+       border-radius: 35%;
+       margin: 15px 0 15px 0;
+       color:rgb(112, 167, 243) ;
+       font-size: 20px;
+       text-transform: uppercase;
+       
+   }
+    .btnOffer>button{
+        color: white;
+        background-color: rgb(112, 167, 243);
+
+}
+.NetStatus{
+    color: var(--main-color);
+}
